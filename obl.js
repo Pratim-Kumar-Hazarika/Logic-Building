@@ -102,6 +102,24 @@ const weekDayOrWeekend = (n) => {
     }
 }
 
-console.log(weekDayOrWeekend("tuesday"))
+console.log(weekDayOrWeekend("tuesday"));
 
+const star = (n) => {
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*")
+        }
+        document.write("</br>")
+    }
+}
 
+star(6);
+
+const fib=(n)=>{
+    let arr=[0,1];
+    for(let i=2;i<n;i++){
+        arr.push(arr[i-2] + arr[i-1])
+    }
+    return arr;
+}
+console.log(fib(15));
