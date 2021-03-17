@@ -25,10 +25,29 @@ const typeOfTriangle = (a, b, c) => {
         return "Scalene Triangle"
     } else if (a === b && a !== c && (a + b + c) === sum) {
         return "Isoceles Triangle"
-    } else if (a === b && b=== c && a===c && (a + b + c) === sum) {
+    } else if (a === b && b === c && a === c && (a + b + c) === sum) {
         return "Equilateral Triangle"
     } else if ((a + b + c) !== sum) {
         return "Not a Triangle"
     }
 }
-console.log(typeOfTriangle(30,60,90))
+console.log(typeOfTriangle(30, 60, 90))
+
+//Medium
+
+const arrayLength = (arr) => arr.length;
+console.log(arrayLength([1, 5, 3, 7, 8]));
+
+const indexOf = (arr, a) => arr.indexOf(a);
+console.log(indexOf([1, 6, 3, 5, 8, 9], 3));
+
+const replace = (arr, n1, n2) => arr.map((item) => {
+    return item === n1 ? n2 : item;
+})
+console.log(replace([1, 5, 3, 5, 6, 8], 5, 10));
+
+const mergeArray = (a, b) => [...a, ...b];
+console.log(mergeArray([1, 3, 5], [2, 4, 6]));
+
+const charAt = (str, n) => str.charAt(n);
+console.log(charAt("neoGcamp", 4));
