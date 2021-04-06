@@ -51,3 +51,29 @@ console.log(mergeArray([1, 3, 5], [2, 4, 6]));
 
 const charAt = (str, n) => str.charAt(n);
 console.log(charAt("neoGcamp", 4));
+
+//Advanced
+
+const encodedString = (str, num) => {
+    let result = "  "
+    let generatedNumber = 0;
+    for (let i = 0; i < str.length; i++) {
+
+        generatedNumber = (str[i].charCodeAt()) + num;
+        result = result + String.fromCharCode(generatedNumber);
+        console.log(result)
+
+    }
+}
+console.log(encodedString("neogcamp", 2));
+
+
+const arr = [100, 83, 32, 9, 45, 61];
+
+const sortArray = (arr) => arr.sort((a, b) => a - b)
+console.log("sorted arry", sortArray(arr))
+
+const reverseLetter = (str) => {
+    return str.split("").reverse().join('').split("").reverse().join("")
+}
+console.log(reverseLetter("we are neogrammers"))
